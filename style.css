@@ -1,0 +1,69 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #ffd166;
+}
+
+div.cotainer {
+	position: absolute;
+	left: 25%;
+	top: 30%; 
+	width: 50%;
+	height: 40%;
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+	border-radius:25px;
+}
+
+div.topBar {
+	position: relative;
+	width: 100%;
+	height: 10%;
+	background-color: #e5e5e5;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	border-radius: 15px 15px 0px 0px;
+	border-left: 1px solid #ced4da;
+	border-top: 1px solid #ced4da;
+	border-right: 1px solid #ced4da;
+	padding: 10px;
+}
+
+div.editor {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #fffffc;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizin: border-box;
+	border-radius: 0px 0px 15px 15px;
+	border-left: 1px  solid #ced4da;
+	border-bottom: 1px solid #ced4da;
+	border-right: 1px solid #ced4da;
+	text-align: center;
+}
+
+textarea.editor {
+	width: 95%;
+	height: 96%;
+	border-style: none;
+	border-color: transparent;
+	resize: none;
+	overflow: auto;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+div.circle {
+	float: left;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin-right: 10px; 
+}
+
+span.topBar {
+	float: right;
+}
