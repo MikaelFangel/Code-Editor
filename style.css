@@ -50,10 +50,21 @@ textarea.editor {
 	border-color: transparent;
 	resize: none;
 	overflow: auto;
+	font-family: 'Roboto', sans-serif;
 }
 
 textarea:focus {
 	outline: none;
+}
+
+div.hiddenEditor {
+	width: 95%;
+	height: 96%;
+	text-align: left;
+	margin:0px;
+	position:absolute;
+	left: 2.5%;
+	padding-top: 3px;
 }
 
 div.circle {
