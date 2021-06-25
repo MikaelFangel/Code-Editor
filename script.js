@@ -1,11 +1,13 @@
+
 function selectTxtArr() {
 	var txtarea = document.getElementById("editor");
-
+	
 	txtarea.focus();
-	txtarea.setFocusAt(0);
 }
 
 function fetch() {
-	console.log(document.getElementById("editor").value);
+	var txtarea = document.getElementById("editor");
+	var hiddenEd = document.getElementById("hiddenEditor");
+	
+	hiddenEd.innerHTML = txtarea.value;
 }
-
