@@ -6,6 +6,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+
+	 <script src="script.js"></script> 
 <head>
 
 <body>
@@ -18,9 +20,10 @@
 		</div>
 
 		<div class="editor">
-			<textarea class="editor" placeholder="Enter your JavaScript code here!" spellcheck="false"></textarea>
+			<textarea onkeyup="fetch()" class="editor" id="editor" placeholder="Enter your JavaScript code here!" spellcheck="false"></textarea>
 		</div>
 	</div>
+
 </body>
 
 </html>
