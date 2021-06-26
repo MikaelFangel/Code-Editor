@@ -1,4 +1,3 @@
-
 function selectTxtArr() {
 	var txtarea = document.getElementById("editor");
 	
@@ -9,5 +8,7 @@ function fetch() {
 	var txtarea = document.getElementById("editor");
 	var hiddenEd = document.getElementById("hiddenEditor");
 	
-	hiddenEd.innerHTML = txtarea.value;
+	var text = txtarea.value;
+	text = text.replace(/\r?\n/g,'<br>');	// replaces linebreaks with html tags in the hidden div
+	hiddenEd.innerHTML = text;		// breaks code when writing html
 }
