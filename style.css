@@ -44,7 +44,8 @@ textarea.editor {
 	border-style: none;
 	border-color: transparent;
 	resize: none;
-	overflow: auto;
+	overflow-y: scroll;
+	overflow-x: hidden;
 	font-family: 'Roboto', sans-serif;
 	-ms-overflow-style: none;
 	scrollbar-width: none;
@@ -63,7 +64,8 @@ div.hiddenEditor {
 	left: 2.5%;
 	padding-top: 3px;
 	color: #e76f51;
-	overflow: auto;
+	overflow-y: scroll;
+	overflow-x: hidden;
 	-ms-overflow-style: none;
 	scrollbar-width: none;
 }
