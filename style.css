@@ -3,6 +3,10 @@ body {
 	background: #ffd166;
 }
 
+div::-webkit-scrollbar {
+	display: none;
+}
+
 div.cotainer {
 	position: absolute;
 	left: 25%;
@@ -42,6 +46,8 @@ textarea.editor {
 	resize: none;
 	overflow: auto;
 	font-family: 'Roboto', sans-serif;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 }
 
 textarea:focus {
@@ -57,6 +63,9 @@ div.hiddenEditor {
 	left: 2.5%;
 	padding-top: 3px;
 	color: #e76f51;
+	overflow: auto;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 }
 
 div.circle {
