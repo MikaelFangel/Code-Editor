@@ -18,7 +18,9 @@ function fetch() {
 	var localStorage = window.localStorage
 	
 	var text = txtarea.value;
-	localStorage.setItem('savedTxt', text)
+	localStorage.setItem('savedTxt', text);
+	text = text.replace(/</g,'&lt;');
+	text = text.replace(/>/g,'&gt;');
 	text = text.replace(/\r?\n/g,'<br>');	// replaces linebreaks with html tags in the hidden div
 	hiddenEd.innerHTML = text;		// breaks code when writing html
 }
