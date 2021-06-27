@@ -22,5 +22,20 @@ function fetch() {
 	text = text.replace(/</g,'&lt;');
 	text = text.replace(/>/g,'&gt;');
 	text = text.replace(/\r?\n/g,'<br>');	// replaces linebreaks with html tags in the hidden div
-	hiddenEd.innerHTML = text;		// breaks code when writing html
+	hiddenEd.innerHTML = text;	
+	scrollSyncWriter();
 }
+
+function scrollSyncWriter() {
+	var txtarea = document.getElementById("editor");
+	var hiddenEd = document.getElementById("hiddenEditor");
+
+	hiddenEd.scrollTop = txtarea.scrollTop
+}
+
+function scrollSync() {
+	var txtarea = document.getElementById("editor");
+	var hiddenEd = document.getElementById("hiddenEditor");
+
+	txtarea.scrollTop = hiddenEd.scrollTop;
+}	
