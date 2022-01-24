@@ -5,7 +5,7 @@
 I've made this small code editor in HTML/CSS/JS just as a personal challenge.
 
 ## ToDo's
-[X] Add syntax highlighting
+[X] Add syntax highlighting  
 [] Improve scroll sync  
 [] Make mobile friendly  
 [] Clean up code  
