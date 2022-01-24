@@ -22,7 +22,18 @@ function fetch() {
 	text = text.replace(/</g,'&lt;');
 	text = text.replace(/>/g,'&gt;');
 	text = text.replace(/\r?\n/g,'<br>');	// replaces linebreaks with html tags in the hidden div
-	hiddenEd.innerHTML = text;	
+    
+    // Highlighting
+    text = text.replace(/function/g, '<span style="color: #90e0ef">function</span>');
+    text = text.replace(/return/g, '<span style="color: #90e0ef">for</span>');
+    text = text.replace(/var/g, '<span style="color: #90e0ef">var</span>');
+    text = text.replace(/let/g, '<span style="color: #90e0ef">let</span>');
+    text = text.replace(/document/g, '<span style="color: #e9c46a">document</span>');
+    text = text.replace(/window/g, '<span style="color: #e9c46a">window</span>');
+    text = text.replace(/for/g, '<span style="color: #e9c46a">for</span>');
+    text = text.replace(/if/g, '<span style="color: #e9c46a">if</span>');
+
+    hiddenEd.innerHTML = text;	
 	scrollSyncWriter();
 }
 
@@ -38,4 +49,4 @@ function scrollSync() {
 	var hiddenEd = document.getElementById("hiddenEditor");
 
 	txtarea.scrollTop = hiddenEd.scrollTop;
-}	
+}
